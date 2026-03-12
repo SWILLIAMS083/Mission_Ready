@@ -1,0 +1,287 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Williams — Mission 1 Guide</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- HEADER + NAVIGATION -->
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <img class="logo" src="veilence-logo.png" alt="Veilence logo" />
+          <h1 id="main-title" class="brand-title">Samuel Williams</h1>
+        </div>
+
+        <!-- The tagline describes the project and its purpose. -->
+
+        <p class="tagline">
+          Mission 1 — One-page website that also explains the HTML + CSS
+          requirements.
+        </p>
+
+        <!-- Navigation links use anchor tags to jump to sections on this page or
+             connect to other pages. -->
+
+        <nav class="nav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="code-showcase.html">Code Showcase</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="container">
+      <!-- HTML GUIDE -->
+      <section id="html" class="section">
+        <h2 class="section-title">HTML Requirements (What I can explain)</h2>
+        <p class="section-intro">
+          These are the exact elements required for Mission 1, and where they
+          appear on this page.
+        </p>
+
+        <!-- The guide box below lists all required HTML elements and their usage. -->
+
+        <div class="guide-box">
+          <ul class="bullets">
+            <li>
+              <strong>&lt;head&gt;</strong> — holds metadata + the CSS link (top
+              of this file).
+            </li>
+            <li>
+              <strong>&lt;body&gt;</strong> — wraps everything visible on the
+              page.
+            </li>
+            <li>
+              <strong>&lt;div&gt;</strong> — used as containers for layout (ex:
+              <code>.container</code>, <code>.card</code>).
+            </li>
+            <li>
+              <strong>&lt;h1&gt;</strong> — main heading (my name at the top of
+              the page).
+            </li>
+            <li>
+              <strong>&lt;p&gt;</strong> — paragraph text (tagline + intros +
+              descriptions).
+            </li>
+            <li>
+              <strong>&lt;img&gt;</strong> — image used once in the header
+              (logo) to demonstrate the tag.
+            </li>
+            <li>
+              <strong>&lt;a&gt;</strong> — links (nav links jump to sections;
+              email link in contact section).
+            </li>
+            <li>
+              <strong>Class</strong> — reusable styling (ex:
+              <code>class="card"</code> used multiple times).
+            </li>
+            <li>
+              <strong>ID</strong> — unique targeting (ex:
+              <code>id="contact"</code> is one section only).
+            </li>
+            <li>
+              <strong>Email Contact Form</strong> — the form below uses
+              <code>mailto:</code> for simplicity.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CSS GUIDE -->
+      <section id="css" class="section">
+        <h2 class="section-title">CSS Requirements (What I can show)</h2>
+        <p class="section-intro">
+          These are the exact CSS requirements and where they appear in
+          <code>styles.css</code>.
+        </p>
+
+        <!-- The guide box below lists all required CSS properties and where they are used. -->
+
+        <div class="guide-box">
+          <ul class="bullets">
+            <li>
+              <strong>Flexbox</strong> — used in <code>.nav</code>,
+              <code>.cards</code>, and <code>.skills</code> for layout.
+            </li>
+            <li>
+              <strong>Background stylisation</strong> — <code>body</code> uses a
+              gradient background.
+            </li>
+            <li>
+              <strong>Font stylisation</strong> — <code>font-family</code> and
+              font sizes are set on headings/text.
+            </li>
+            <li>
+              <strong>Margins</strong> — spacing outside elements (ex: headings
+              and paragraphs).
+            </li>
+            <li>
+              <strong>Width &amp; Height</strong> — cards and the header logo
+              have sizing rules (ex: <code>.card</code>, <code>.logo</code>).
+            </li>
+            <li>
+              <strong>Animations</strong> — the button uses a
+              <code>@keyframes</code> animation called <code>pulse</code>.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- WORK / EXAMPLE LAYOUT -->
+      <section id="work" class="section">
+        <h2 class="section-title">Example Layout (Flexbox Cards)</h2>
+        <p class="section-intro">
+          The cards below demonstrate reusable classes, links, spacing, and
+          hover effects.
+        </p>
+
+        <!-- The cards below use the .card class for consistent styling, and are laid out with flexbox. -->
+
+        <div class="cards">
+          <div class="card">
+            <h3 class="card-title">Reusable Card</h3>
+            <p class="card-text">
+              This <code>.card</code> is reused 3 times to show consistency.
+            </p>
+            <a class="card-link" href="#html">Back to HTML</a>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Hover Effects</h3>
+            <p class="card-text">
+              Hover the card and nav buttons to see simple interaction.
+            </p>
+            <a class="card-link" href="#css">Back to CSS</a>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Sizing</h3>
+            <p class="card-text">
+              The cards use width and minimum height rules in CSS.
+            </p>
+            <a class="card-link" href="#contact">Go to Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section">
+        <h2 class="section-title">Quick Summary (What I practised)</h2>
+
+        <div class="skills">
+          <div class="skill">
+            <h3 class="skill-title">Structure</h3>
+            <p class="skill-text">
+              Head + body, sections, containers, reusable components.
+            </p>
+          </div>
+
+          <div class="skill">
+            <h3 class="skill-title">Styling</h3>
+            <p class="skill-text">
+              Fonts, background, spacing, hover states, simple animation.
+            </p>
+          </div>
+
+          <div class="skill">
+            <h3 class="skill-title">Layout</h3>
+            <p class="skill-text">
+              Flexbox for alignment, gap, wrapping, and consistent layout.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Email Contact Form</h2>
+        <p class="section-intro">
+          This form uses <strong>mailto:</strong> so it works without a backend.
+        </p>
+
+        <div class="guide-box">
+          <ul class="bullets">
+            <li>
+              <strong>&lt;form&gt;</strong> — collects input from the user.
+            </li>
+            <li>
+              <strong>&lt;label&gt;</strong> — describes what each input is for.
+            </li>
+            <li><strong>&lt;input&gt;</strong> — used for name + email.</li>
+            <li><strong>&lt;textarea&gt;</strong> — used for the message.</li>
+            <li><strong>&lt;button&gt;</strong> — submits the form.</li>
+          </ul>
+        </div>
+
+        <form
+          class="contact-form"
+          action="mailto:VeilenceAi@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-row">
+            <label class="label" for="name">Name</label>
+            <input
+              class="input"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label class="label" for="email">Email</label>
+            <input
+              class="input"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label class="label" for="message">Message</label>
+            <textarea
+              class="input textarea"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="What do you want to say?"
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+
+        <p class="tiny-note">
+          Or email directly:
+          <a class="inline-link" href="mailto:VeilenceAi@gmail.com"
+            >VeilenceAi@gmail.com</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          © Samuel Williams — Mission 1 (HTML + CSS Guide)
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

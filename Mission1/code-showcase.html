@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code Showcase — Mission 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand-title">Mission 1 Code Breakdown</h1>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="code-showcase.html">Code</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+
+    <!-- CSS LINKING -->
+    <div class="card">
+      <h2>1. Linking External CSS</h2>
+      <p>This keeps structure separate from styling.</p>
+      <pre><code>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+      </code></pre>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="card">
+      <h2>2. Navigation Between Pages</h2>
+      <p>Using anchor tags to connect HTML files.</p>
+      <pre><code>
+&lt;a href="index.html"&gt;Home&lt;/a&gt;
+&lt;a href="about.html"&gt;About&lt;/a&gt;
+      </code></pre>
+    </div>
+
+    <!-- REUSABLE CLASSES -->
+    <div class="card">
+      <h2>3. Reusable Layout with Classes</h2>
+      <p>Classes allow consistent styling across sections.</p>
+      <pre><code>
+&lt;div class="card"&gt;
+  &lt;h2&gt;Section Title&lt;/h2&gt;
+  &lt;p&gt;Reusable content block&lt;/p&gt;
+&lt;/div&gt;
+      </code></pre>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="card">
+      <h2>4. Contact Form</h2>
+      <p>Using form, label, input, textarea and button elements.</p>
+      <pre><code>
+&lt;form action="mailto:you@example.com"&gt;
+  &lt;label&gt;Name&lt;/label&gt;
+  &lt;input type="text"&gt;
+  &lt;textarea&gt;&lt;/textarea&gt;
+  &lt;button&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+      </code></pre>
+    </div>
+
+    <!-- FLEXBOX -->
+    <div class="card">
+      <h2>5. Flexbox Layout</h2>
+      <p>Flexbox controls alignment and spacing.</p>
+      <pre><code>
+.nav {
+  display: flex;
+  gap: 12px;
+}
+      </code></pre>
+    </div>
+
+    <!-- ANIMATION -->
+    <div class="card">
+      <h2>6. CSS Animation</h2>
+      <p>Keyframes define animation, class applies it.</p>
+      <pre><code>
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.btn {
+  animation: pulse 2s infinite;
+}
+      </code></pre>
+    </div>
+
+  </main>
+
+</body>
+</html>
