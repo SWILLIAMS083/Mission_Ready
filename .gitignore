@@ -1,0 +1,12 @@
+# Ignore course folders you don't want on GitHub
+Samuel_Williams_M2/
+Week01_HTML_CSS/
+Week02_Web_JS/
+Week03_JS_Core/
+Week04_DOM_Project/
+Week05_JS_OPP/
+
+# Ignore editor settings
+.vscode/
+# Ignore logs
+*.log
